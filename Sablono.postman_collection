@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "82ba08e9-5ca1-4856-aac2-0ea394c15b0f",
+		"name": "Sablono",
+		"description": "The REST api for calculating a bowling game score. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post bowling game info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"gameBoard\":[\r\n   {\"First\":2,\"Second\":6},\r\n    {\"First\":0,\"Second\":5},\r\n    {\"First\":0}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "41c2b8de-6a34-4bee-a5e3-586e76120074",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "72dc3487-b48c-4744-84c3-79499ec640aa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
